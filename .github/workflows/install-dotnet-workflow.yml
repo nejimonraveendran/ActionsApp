@@ -8,3 +8,5 @@ jobs:
         run: |
           sudo apt update
           sudo apt install dotnet-sdk-9.0 -y
+      - name: print-dotnet-version
+        run: dotnet --version
