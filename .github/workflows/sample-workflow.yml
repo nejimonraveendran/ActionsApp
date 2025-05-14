@@ -1,0 +1,11 @@
+name: Sample Workflow
+on: workflow_dispatch
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print-info
+      - run: echo "Hello world"
+      - run: whoami
+      - run: cat /etc/os-release
+      
