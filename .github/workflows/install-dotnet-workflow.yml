@@ -7,11 +7,6 @@ jobs:
       - name: install-dotnet-step
         run: |
           sudo apt-get update
-          sudo apt-get install wget -y
-          wget https://download.visualstudio.microsoft.com/download/pr/your-download-link/dotnet-sdk-9.0.x-linux-x64.tar.gz
-          mkdir -p $HOME/dotnet
-          tar zxf dotnet-sdk-9.0.x-linux-x64.tar.gz -C $HOME/dotnet
-          export DOTNET_ROOT=$HOME/dotnet
-          export PATH=$PATH:$HOME/dotnet
+          sudo apt-get install -y dotnet-runtime-9.0
       - name: print-dotnet-version
         run: dotnet --version
