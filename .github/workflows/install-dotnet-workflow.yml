@@ -1,10 +1,10 @@
-name: cron
+name: Install Dotnet Workflow
 on: workflow_dispatch
 jobs:
   install-dotnet-job:
     runs-on: ubuntu-latest
     steps:
       - name: install-dotnet-step
-      run: |
+        run: |
           sudo apt update
           sudo apt install dotnet-sdk-9.0 -y
