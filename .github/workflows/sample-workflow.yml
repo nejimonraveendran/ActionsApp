@@ -4,6 +4,10 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: print-info
-      - run: echo "Hello world" & whoami & cat /etc/os-release
+      - name: print-greeting
+        run: echo "Hello world"
+      - name: pring-user
+        run: whoami
+      - name: print-os-version
+        run: cat /etc/os-release
       
