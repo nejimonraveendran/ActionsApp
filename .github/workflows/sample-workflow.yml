@@ -5,7 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print-info
-      - run: echo "Hello world"
-      - run: whoami
-      - run: cat /etc/os-release
+      - run: echo "Hello world" & whoami & cat /etc/os-release
       
